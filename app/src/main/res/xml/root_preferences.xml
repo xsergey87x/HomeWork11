@@ -1,0 +1,56 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory app:title="Tab 1">
+
+        <EditTextPreference
+            app:key="text1"
+            app:title="Text tab 1"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="14"
+            android:entries="@array/entry_values2"
+            android:entryValues="@array/entry_values2"
+            android:key="fontSize1"
+            android:title="Font size"
+            app:useSimpleSummaryProvider="true"/>
+        <ListPreference
+            android:defaultValue="Red"
+            android:entries="@array/entries"
+            android:entryValues="@array/entry_values"
+            android:key="color1"
+            android:title="Background color tab 1"
+            app:useSimpleSummaryProvider="true"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory app:title="Tab 2">
+        <EditTextPreference
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:key="edit_text_preference_1"
+            app:key = "text2"
+            app:title="Text tab 2"
+            app:useSimpleSummaryProvider="true" />
+        <ListPreference
+            android:defaultValue="14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/entry_values2"
+            android:entryValues="@array/entry_values2"
+            android:key="fontSize2"
+            android:title="Font size"
+            app:useSimpleSummaryProvider="true"/>
+
+        <ListPreference
+            android:defaultValue="Red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/entries"
+            android:entryValues="@array/entry_values"
+            android:key="color2"
+            android:title="Background color tab 2"
+            app:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
